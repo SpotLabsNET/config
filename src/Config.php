@@ -13,7 +13,7 @@ class Config {
     if (isset(Config::$values[$key])) {
       return Config::$values[$key];
     } else {
-      if (empty(Config::$values[$key])) {
+      if (empty(Config::$values)) {
         throw new ConfigException("Site configuration has not been initialised");
       } else if ($default !== null) {
         return $default;
