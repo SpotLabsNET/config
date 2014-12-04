@@ -23,6 +23,10 @@ class Config {
     }
   }
 
+  static function has($key) {
+    return isset(Config::$values[$key]);
+  }
+
   /**
    * If the input arrays have the same string keys, then the earlier value for that key will not be overwritten.
    * @see #overwrite()
