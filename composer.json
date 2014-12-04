@@ -1,0 +1,8 @@
+{
+  "name": "openclerk/config",
+  "autoload": {
+    "psr-4": {
+      "Openclerk\\": "src"
+    }
+  }
+}
