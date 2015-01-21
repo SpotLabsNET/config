@@ -14,7 +14,7 @@ class Config {
       return Config::$values[$key];
     } else {
       if (empty(Config::$values)) {
-        throw new ConfigException("Site configuration has not been initialised");
+        throw new ConfigException("Site configuration has not been initialised for '$key'");
       } else if ($default !== null) {
         return $default;
       } else {
